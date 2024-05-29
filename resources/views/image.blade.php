@@ -188,8 +188,108 @@
             height: 435px;
         }
 
-        .text-1320x720 {
+         .text-1320x720 {
             font-size: 60px;
+            color: white;
+            line-height: 0.94;
+        }
+
+        .img-320x1218 {
+            position: absolute;
+            top: 281px;
+            left: 31px;
+            object-fit: cover;
+            width: 248px;
+            height: 246px;
+        }
+
+        .text-container-320x1218 {
+            width: 260px;
+            height: 480px;
+            position: absolute;
+            top: 628px;
+            left: 28px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .text-320x1218 {
+            font-size: 50px;
+            color: white;
+            line-height: 0.94;
+        }
+
+        .img-576x1080 {
+            position: absolute;
+            top: 163px;
+            left: 99px;
+            object-fit: cover;
+            width: 342px;
+            height: 338px;
+        }
+
+        .text-container-576x1080 {
+            width: 520px;
+            height: 310px;
+            position: absolute;
+            top: 628px;
+            left: 28px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .text-576x1080 {
+            font-size: 60px;
+            color: white;
+            line-height: 0.94;
+        }
+
+        .img-385x1218 {
+            position: absolute;
+            top: 269px;
+            left: 52px;
+            object-fit: cover;
+            width: 266px;
+            height: 265px;
+        }
+
+        .text-container-385x1218 {
+            width: 324px;
+            height: 460px;
+            position: absolute;
+            top: 628px;
+            left: 28px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .text-385x1218 {
+            font-size: 60px;
+            color: white;
+            line-height: 0.94;
+        }
+
+        .img-576x448 {
+            position: absolute;
+            top: 63px;
+            left: 304px;
+            object-fit: cover;
+            width: 220px;
+            height: 219px;
+        }
+
+        .text-container-576x448 {
+            width: 238px;
+            height: 275px;
+            position: absolute;
+            top: 69px;
+            left: 18px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .text-576x448 {
+            font-size: 45px;
             color: white;
             line-height: 0.94;
         }
