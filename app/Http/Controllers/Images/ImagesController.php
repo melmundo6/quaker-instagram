@@ -19,7 +19,7 @@ class ImagesController extends Controller
 
     public function store(){
         $data = array_merge(\request()->all(), ["measures" => 
-            ["320x1218", "385x1218", "576x448", "576x1080", "640x387","768x304","768x448", "800x420","816x336","1088x448","1320x720", "1920x1080", "3840x2160"]
+            ["320x1218", "385x1218", "576x448", "576x1080", "640x387","768x304","768x448", "800x420","816x336","1088x448","1320x720", "1920x1080", "3840x2160", "624x468"]
         ]);
         $name = 'image-'.now()->timestamp.'.jpg';
         Storage::disk('images')->putFileAs('', $data['url'], $name);
@@ -40,8 +40,8 @@ class ImagesController extends Controller
 
     public function test(){
         $image = array_merge(\request()->all(), ["measures" => ["640x387","768x304","768x448","816x336","1088x448","1320x720"]]);
-        $size = "3840x2160";
-        $image['url'] = 'image-1715106859.jpg';
+        $size = "624x468";
+        $image['url'] = 'xs.jpg';
         $image['phrase'] = "texto de prueba abber";
         $width = explode('x', $size)[0];
         $height = explode('x', $size)[1];

@@ -372,6 +372,31 @@
             line-height: 0.94;
         }
 
+        .img-624x468 {
+            position: absolute;
+            top: 199px;
+            left: 215px;
+            object-fit: cover;
+            width: 164px;
+            height: 165px;
+        }
+
+        .text-container-624x468 {
+            width: 166px;
+            height: 279px;
+            position: absolute;
+            top: 140px;
+            left: 12px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .text-624x468 {
+            font-size: 22px;
+            color: white;
+            line-height: 0.94;
+        }
+
         .rotate {
             -webkit-transform: rotate(-12.5deg);
             -moz-transform: rotate(-12.5deg);
