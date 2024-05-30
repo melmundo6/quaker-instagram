@@ -188,7 +188,7 @@
             height: 435px;
         }
 
-         .text-1320x720 {
+        .text-1320x720 {
             font-size: 60px;
             color: white;
             line-height: 0.94;
@@ -272,6 +272,7 @@
             line-height: 0.94;
         }
 
+        /* 320x1218 */
         .img-320x1218 {
             position: absolute;
             top: 281px;
@@ -297,6 +298,7 @@
             line-height: 0.94;
         }
 
+        /* 576x1080 */
         .img-576x1080 {
             position: absolute;
             top: 163px;
@@ -322,6 +324,7 @@
             line-height: 0.94;
         }
 
+        /* 385x1218 */
         .img-385x1218 {
             position: absolute;
             top: 269px;
@@ -347,6 +350,7 @@
             line-height: 0.94;
         }
 
+        /* 576x448 */
         .img-576x448 {
             position: absolute;
             top: 63px;
@@ -367,11 +371,12 @@
         }
 
         .text-576x448 {
-            font-size: 45px;
+            font-size: 25px;
             color: white;
             line-height: 0.94;
         }
 
+        /* 624x468 */
         .img-624x468 {
             position: absolute;
             top: 199px;
@@ -393,6 +398,32 @@
 
         .text-624x468 {
             font-size: 22px;
+            color: white;
+            line-height: 0.94;
+        }
+
+        /* 2160x3840 */
+        .img-2160x3840 {
+            position: absolute;
+            top: 603px;
+            left: 485px;
+            object-fit: cover;
+            width: 1170px;
+            height: 1171px;
+        }
+
+        .text-container-2160x3840 {
+            width: 1852px;
+            height: 1000px;
+            position: absolute;
+            top: 2300px;
+            left: 138px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .text-2160x3840 {
+            font-size: 120px;
             color: white;
             line-height: 0.94;
         }
