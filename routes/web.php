@@ -22,7 +22,7 @@ Auth::routes(["register" => false]);
 Route::middleware('auth')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::middleware('auth')->get('/image/{size}', [App\Http\Controllers\Images\ImagesController::class, 'image'])->name('image');
 Route::middleware('auth')->get('/admin', [App\Http\Controllers\Images\ImagesController::class, 'admin'])->name('admin');
-Route::middleware('auth')->get('/test', [App\Http\Controllers\Images\ImagesController::class, 'test'])->name('test');
+Route::get('/test', [App\Http\Controllers\Images\ImagesController::class, 'test'])->name('test');
 
 Auth::routes();
 

@@ -40,9 +40,8 @@ class ImagesController extends Controller
 
     public function test(){
         $image = array_merge(\request()->all(), ["measures" => ["640x387","768x304","768x448","816x336","1088x448","1320x720"]]);
-        $size = "624x468";
-        $image['url'] = 'xs.jpg';
-        $image['phrase'] = "texto de prueba abber voy a poner un texto todavia mas largo la empatia abre todas puertas me enseño";
+        $size = "432x336";
+        $image['url'] = 'example.jpg';
         $width = explode('x', $size)[0];
         $height = explode('x', $size)[1];
 
