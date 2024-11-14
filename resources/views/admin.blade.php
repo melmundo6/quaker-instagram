@@ -17,10 +17,10 @@
                             <label for="name">URL</label>
                             <input type="file" accept="image/*" class="form-control" id="url" required>
                         </div>
-                        <div class="form-group col-md-4">
+                        <!-- <div class="form-group col-md-4">
                             <label for="start_date">Frase</label>
                             <input type="tex" class="form-control" id="phrase" required>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="spinner" id="animacion-carga"></div>
                     <button onclick="saveImage()" type="button" class="btn btn-primary">Guardar</button>
@@ -36,14 +36,14 @@
 <script>
     function saveImage() {
         let url = document.querySelector('#url').files[0];
-        let phrase = document.querySelector('#phrase').value;
+        // let phrase = document.querySelector('#phrase').value;
         let alerts = document.querySelector('#alerts');
         let animation = document.getElementById('animacion-carga');
         let buttonContainer = document.getElementById('button-container');
         let buttonNew = document.getElementById('button-newImage');
 
         animation.style.display = 'block';
-        if (!url || !phrase) {
+        if (!url) {
             alerts.classList.remove('d-none');
             alerts.classList.add('d-block');
 
@@ -57,7 +57,7 @@
 
         const formData = new FormData();
         formData.append('url', url, url.name);
-        formData.append('phrase', phrase);
+        // formData.append('phrase', phrase);
 
         fetch("{{ route('images.store') }}", {
                 method: 'POST',

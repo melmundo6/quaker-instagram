@@ -18,8 +18,18 @@ class ImagesController extends Controller
     }
 
     public function store(){
-        $data = array_merge(\request()->all(), ["measures" =>
-            ["320x1218", "385x1218", "576x448", "576x1080", "640x387","768x304","768x448", "800x420","816x336","1088x448","1320x720", "1920x1080", "3840x2160", "624x468", "2160x3840"]
+        $data = array_merge(\request()->except('phrase'), ["measures" =>
+            ["432x336",
+            "576x1296",
+            "624x468",
+            "750x450",
+            "800x420",
+            "816x336",
+            "1088x448",
+            "1320x720",
+            "1440x960",
+            "1500x450",
+            "1920x1080"]
         ]);
         $name = 'image-'.now()->timestamp.'.jpg';
         Storage::disk('images')->putFileAs('', $data['url'], $name);
@@ -40,7 +50,7 @@ class ImagesController extends Controller
 
     public function test(){
         $image = array_merge(\request()->all(), ["measures" => ["640x387","768x304","768x448","816x336","1088x448","1320x720"]]);
-        $size = "1920x1080";
+        $size = "800x420";
         $image['url'] = 'example.jpg';
         $width = explode('x', $size)[0];
         $height = explode('x', $size)[1];
