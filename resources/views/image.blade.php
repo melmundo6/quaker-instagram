@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Image Instagram</title>
     <style>
-        body, figure{
+        body, figure {
             margin-top: 0px;
             margin-left: 0px;
         }
 
-        .container{
+        .container {
             position: relative;
         }
 
@@ -182,6 +183,60 @@
             width: 1170px;
             height: 1171px;
         }
+
+        .img-816x336 {
+            position: absolute;
+            top: 43px;
+            left: 233px;
+            object-fit: cover;
+            width: 211px;
+            height: 207px;
+        }
+
+        .img-1088x448 {
+            position: absolute;
+            top: 57px;
+            left: 313px;
+            object-fit: cover;
+            width: 283px;
+            height: 278px;
+        }
+
+        .img-1320x720 {
+            position: absolute;
+            top: 71px;
+            left: 100px;
+            object-fit: cover;
+            width: 469px;
+            height: 460px;
+        }
+
+        .img-1440x960 {
+            position: absolute;
+            top: 151px;
+            left: 112px;
+            object-fit: cover;
+            width: 525px;
+            height: 516px;
+        }
+
+        .img-1500x450 {
+            position: absolute;
+            top: 45px;
+            left: 499px;
+            object-fit: cover;
+            width: 306px;
+            height: 300px;
+        }
+        .img-1920x1080{
+            position: absolute;
+            top: 112px;
+            left: 154px;
+            object-fit: cover;
+            width: 695px;
+            height: 680px;
+        }
+
     </style>
 </head>
 <body>
