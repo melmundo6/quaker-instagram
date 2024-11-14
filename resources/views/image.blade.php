@@ -6,14 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Image Instagram</title>
     <style>
-        @font-face {
-            font-family: 'poppins';
-            src: url({{asset('fonts/Poppins-SemiBold.ttf')}});
-        }
         body, figure{
             margin-top: 0px;
             margin-left: 0px;
-            font-family: 'poppins';
         }
 
         .container{
@@ -29,8 +24,8 @@
             height: 418px;
         }
 
-        /* 640x387 */
-        .img-640x387 {
+        /* 432x336 */
+        .img-432x336 {
             position: absolute;
             top: 46px;
             left: 340px;
@@ -187,20 +182,13 @@
             width: 1170px;
             height: 1171px;
         }
-
-        .rotate {
-            -webkit-transform: rotate(-12.5deg);
-            -moz-transform: rotate(-12.5deg);
-            -o-transform: rotate(-12.5deg);
-            -ms-transform: rotate(-12.5deg);
-        }
     </style>
 </head>
 <body>
 <div class="container">
     <figure>
         <img src="{{asset('img/' . $size . '.jpg')}}" alt="Image instagram" width="{{$width}}" height="{{$height}}"/>
-        <img class="img-{{$size}} rotate" src="{{asset('img/' . $image['url'])}}" alt="Image instagram"/>
+        <img class="img-{{$size}}" src="{{asset('img/' . $image['url'])}}" alt="Image instagram"/>
     </figure>
 </div>
 </body>
