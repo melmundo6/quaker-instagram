@@ -390,7 +390,7 @@
             width: 166px;
             height: 279px;
             position: absolute;
-            top: 140px;
+            top: 170px;
             left: 12px;
             overflow: hidden;
             color: white;
