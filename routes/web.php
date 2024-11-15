@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes(["register" => false]);
+
 
 Route::middleware('auth')->get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::middleware('auth')->get('/image/{size}', [App\Http\Controllers\Images\ImagesController::class, 'image'])->name('image');
@@ -25,5 +25,6 @@ Route::middleware('auth')->get('/admin', [App\Http\Controllers\Images\ImagesCont
 Route::get('/test', [App\Http\Controllers\Images\ImagesController::class, 'test'])->name('test');
 
 Auth::routes();
+Auth::routes(["register" => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
